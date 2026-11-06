@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 root=$(cd -- "$(dirname -- "$0")/.." && pwd -P)
-helper=$root/skills/agent-harness-handoff/scripts/handoff.sh
+helper=$root/skills/handoff/scripts/handoff.sh
 tmp=$(mktemp -d "${TMPDIR:-/tmp}/handoff-test.XXXXXXXX")
 tmp=$(cd -- "$tmp" && pwd -P)
 trap 'rm -rf -- "$tmp"' EXIT

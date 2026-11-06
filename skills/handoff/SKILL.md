@@ -1,5 +1,5 @@
 ---
-name: agent-harness-handoff
+name: handoff
 description: Hand off the current task or session from one agent harness to another, such as Claude Code to OpenCode, OpenCode to Claude Code, or any other coding agent. Use when the user asks to switch harnesses, continue this work in another agent, or prepare a session transfer. Produces a portable context brief and a safe launch command, not an internal session database migration.
 compatibility: Bash 3.2+, standard Unix tools; Git optional. Target harness CLI needed only to launch.
 ---

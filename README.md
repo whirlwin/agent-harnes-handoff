@@ -25,7 +25,7 @@ claude --plugin-dir /absolute/path/to/agent-harnes-handoff
 Then ask “Hand this task off to OpenCode”, or invoke:
 
 ```text
-/agent-harness-handoff:agent-harness-handoff opencode
+/agent-harness-handoff:handoff opencode
 ```
 
 ## OpenCode V2
@@ -41,9 +41,9 @@ your existing `opencode.jsonc`, preserving other settings:
 ```
 
 Then ask “Hand this task off to Claude Code”, or mention
-`@agent-harness-handoff`. This is a portable skill plugin, not an OpenCode
+`@handoff`. This is a portable skill plugin, not an OpenCode
 server-plugin API extension. Other Agent Skills-compatible harnesses can load
-`skills/agent-harness-handoff` using their own skill discovery mechanism.
+`skills/handoff` using their own skill discovery mechanism.
 
 ## Standalone helper
 
@@ -51,7 +51,7 @@ Requires Bash 3.2+ and standard Unix utilities; Git is optional. The agent
 writes the conversation summary; the helper adds a minimal working-tree snapshot.
 
 ```bash
-helper=/absolute/path/to/agent-harnes-handoff/skills/agent-harness-handoff/scripts/handoff.sh
+helper=/absolute/path/to/agent-harnes-handoff/skills/handoff/scripts/handoff.sh
 bundle=$(bash "$helper" prepare claude-code opencode "$PWD" <<'BRIEF'
 ## Goal
 Finish the pagination fix without changing the API contract.
