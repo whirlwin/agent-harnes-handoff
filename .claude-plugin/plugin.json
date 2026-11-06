@@ -1,0 +1,7 @@
+{
+  "name": "agent-harness-handoff",
+  "version": "0.1.0",
+  "description": "Hand off work between agent harnesses using a portable, reviewable session brief.",
+  "author": { "name": "whirlwin" },
+  "keywords": ["handoff", "skills", "claude-code", "opencode"]
+}

@@ -1,0 +1,5 @@
+schema_version: "1.1"
+name: unknown-target
+expected_outcome: |
+  Produces a portable brief and a manual bootstrap prompt for AcmeAgent without
+  inventing flags, installing software, or launching another harness.

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: claude-to-opencode
+expected_outcome: |
+  Creates a reviewed brief with the goal, completed work, verification gaps,
+  existing-edit constraint and next steps. Provides an OpenCode launch preview
+  without starting a model or claiming that native session state was migrated.
